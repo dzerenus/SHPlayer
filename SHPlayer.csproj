@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Res\Back.png" />
+    <None Remove="Res\Close.png" />
+    <None Remove="Res\Help.png" />
+    <None Remove="Res\Hide.png" />
+    <None Remove="Res\Logo.png" />
+    <None Remove="Res\Pause.png" />
+    <None Remove="Res\Play.png" />
+    <None Remove="Res\Roboto-Light.ttf" />
+    <None Remove="Res\Stop.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Res\Back.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Res\Close.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Res\Help.png" />
+    <Resource Include="Res\Hide.png" />
+    <Resource Include="Res\Logo.png" />
+    <Resource Include="Res\Pause.png" />
+    <Resource Include="Res\Play.png" />
+    <Resource Include="Res\Roboto-Light.ttf" />
+    <Resource Include="Res\Stop.png" />
+  </ItemGroup>
+
+</Project>

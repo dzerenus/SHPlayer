@@ -1,0 +1,21 @@
+﻿<Page x:Class="SHPlayer.PlayerFrame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SHPlayer"
+      mc:Ignorable="d" 
+      d:DesignHeight="40" d:DesignWidth="500"
+      Title="PlayerFrame">
+    <Grid>
+        <Image x:Name="iStop" MouseEnter="btnMouseEnter" MouseLeave="btnMouseLeave" MouseDown="btnMouseDown" MouseUp="btnMouseLeave" MouseLeftButtonUp="btnStopUp" Source="Res/Stop.png" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="20"/>
+        <Image x:Name="iPlay" MouseEnter="btnMouseEnter" MouseLeave="btnMouseLeave" MouseDown="btnMouseDown" MouseUp="btnMouseLeave" MouseLeftButtonUp="btnPlayUp" Source="Res/Pause.png" HorizontalAlignment="Left" Height="20" Margin="35,10,0,0" VerticalAlignment="Top" Width="20"/>
+        
+        <Rectangle x:Name="rStaticTimeLine" HorizontalAlignment="Left" Height="2" Margin="60,10,0,0" VerticalAlignment="Top" Width="430" Fill="White"/>
+        <Rectangle x:Name="rActiveTimeLine" HorizontalAlignment="Left" Height="2" Margin="60,10,0,0" VerticalAlignment="Top" Width="0" Fill="Red"/>
+        <Label MouseLeftButtonUp="TimeLineMouseUp" HorizontalAlignment="Left" Height="12" Margin="60,5,0,0" VerticalAlignment="Top" Width="430"/>
+        
+        <Label x:Name="lPosition" Content="00:00" HorizontalAlignment="Left" Margin="60,15,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Roboto Light" Padding="0,0,0,0" Width="100" Height="15"/>
+        <Label x:Name="lLength" Content="00:00" HorizontalAlignment="Right" Margin="0,15,10,0" VerticalAlignment="Top" Foreground="White" FontFamily="Roboto Light" Padding="0,0,0,0" Width="100" HorizontalContentAlignment="Right" Height="15"/>
+    </Grid>
+</Page>
