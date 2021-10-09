@@ -15,6 +15,7 @@
     <None Remove="Res\Pause.png" />
     <None Remove="Res\Play.png" />
     <None Remove="Res\Roboto-Light.ttf" />
+    <None Remove="Res\Smile.png" />
     <None Remove="Res\Stop.png" />
   </ItemGroup>
 
@@ -31,6 +32,7 @@
     <Resource Include="Res\Pause.png" />
     <Resource Include="Res\Play.png" />
     <Resource Include="Res\Roboto-Light.ttf" />
+    <Resource Include="Res\Smile.png" />
     <Resource Include="Res\Stop.png" />
   </ItemGroup>
 

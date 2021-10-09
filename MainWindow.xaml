@@ -11,7 +11,8 @@
         <Label x:Name="lHeader" Content="ShPlayer by ShpriZZ" MouseDown="rHeader_MouseDown" HorizontalAlignment="Left" Margin="5,2,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Roboto Light"/>
         <Image x:Name="iClose" MouseEnter="btnMouseEnter" MouseUp="iClose_MouseUp" MouseLeave="btnMouseLeave" MouseDown="btnMouseDown" Source="Res/Close.png" HorizontalAlignment="Left" Height="20" Margin="475,5,0,0" VerticalAlignment="Top" Width="20"/>
         <Image x:Name="iHide" MouseEnter="btnMouseEnter" MouseLeave="btnMouseLeave" MouseDown="btnMouseDown" MouseUp="btnMouseLeave" MouseLeftButtonUp="iHide_MouseLeftButtonUp" Source="Res/Hide.png" HorizontalAlignment="Left" Height="20" Margin="450,5,0,0" VerticalAlignment="Top" Width="20"/>
-        <Image x:Name="iHelp" MouseEnter="btnMouseEnter" MouseLeave="btnMouseLeave" MouseDown="btnMouseDown" MouseUp="btnMouseLeave" Source="Res/Help.png" HorizontalAlignment="Left" Height="20" Margin="425,5,0,0" VerticalAlignment="Top" Width="20"/>
+        <Image x:Name="iHelp" MouseEnter="btnMouseEnter" MouseLeave="btnMouseLeave" MouseDown="btnMouseDown" MouseUp="btnMouseLeave" Source="Res/Help.png" HorizontalAlignment="Left" Height="20" Margin="425,5,0,0" VerticalAlignment="Top" Width="20" Visibility="Visible" MouseLeftButtonUp="ToInfoFrame"/>
+        <Image x:Name="iBack" MouseEnter="btnMouseEnter" MouseLeave="btnMouseLeave" MouseDown="btnMouseDown" MouseUp="btnMouseLeave" Source="Res/Back.png" HorizontalAlignment="Left" Height="20" Margin="425,5,0,0" VerticalAlignment="Top" Width="20" Visibility="Hidden" MouseLeftButtonUp="ToBackFrame"/>
         <Frame x:Name="FMain" NavigationUIVisibility="Hidden" Margin="0,30,0,0" />
     </Grid>
 </Window>

@@ -29,16 +29,19 @@ namespace SHPlayer
             }
         }
         string fileName;
+        Frame nowFrame;
 
         public MainWindow()
         {
             InitializeComponent();
             FMain.Content = new StartFrame(this);
+            nowFrame = (Frame)FMain.Content;
         }
 
         void ToPlayerFrame()
         {
             FMain.Content = new PlayerFrame(fileName);
+            nowFrame = (Frame)FMain.Content;
 
             var splits = fileName.Split('\\');
             string mname = splits[splits.Length-1];
@@ -47,6 +50,22 @@ namespace SHPlayer
                 mname = mname.Substring(0, 38) + "...";
 
             lHeader.Content = mname;
+        }
+
+        void ToInfoFrame(object sender, MouseButtonEventArgs e)
+        {
+            FMain.Content = new InfoFrame();
+
+            iHelp.Visibility = Visibility.Hidden;
+            iBack.Visibility = Visibility.Visible;
+        }
+
+        void ToBackFrame(object sender, MouseButtonEventArgs e)
+        {
+            FMain.Content = nowFrame;
+
+            iBack.Visibility = Visibility.Hidden;
+            iHelp.Visibility = Visibility.Visible;
         }
 
         #region Нажатие и отпускание кнопок.
@@ -83,9 +102,9 @@ namespace SHPlayer
             Environment.Exit(0);
         }
 
-        void iHide_MouseLeftButtonUp(object sender, MouseButtonEventArgs e) 
-        { 
-            WindowState = WindowState.Minimized; 
+        void iHide_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
         }
 
         #endregion
