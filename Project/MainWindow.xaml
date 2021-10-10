@@ -1,0 +1,18 @@
+﻿<Window x:Class="SHPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SHPlayer"
+        mc:Ignorable="d"
+        Title="ShPlayer by ShpriZZ" Height="70" Width="500" WindowStyle="None" ResizeMode="NoResize" Icon="/favicon.ico">
+    <Grid x:Name="rHeader" Background="#FF171717">
+        <Rectangle HorizontalAlignment="Left" MouseDown="rHeader_MouseDown" Height="30" Margin="0,0,0,0" VerticalAlignment="Top" Width="500" Fill="#FF121212"/>
+        <Label x:Name="lHeader" Content="ShPlayer by ShpriZZ" MouseDown="rHeader_MouseDown" HorizontalAlignment="Left" Margin="5,2,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Roboto Light"/>
+        <Image x:Name="iClose" MouseEnter="btnMouseEnter" MouseUp="iClose_MouseUp" MouseLeave="btnMouseLeave" MouseDown="btnMouseDown" Source="Res/Close.png" HorizontalAlignment="Left" Height="20" Margin="475,5,0,0" VerticalAlignment="Top" Width="20"/>
+        <Image x:Name="iHide" MouseEnter="btnMouseEnter" MouseLeave="btnMouseLeave" MouseDown="btnMouseDown" MouseUp="btnMouseLeave" MouseLeftButtonUp="iHide_MouseLeftButtonUp" Source="Res/Hide.png" HorizontalAlignment="Left" Height="20" Margin="450,5,0,0" VerticalAlignment="Top" Width="20"/>
+        <Image x:Name="iHelp" MouseEnter="btnMouseEnter" MouseLeave="btnMouseLeave" MouseDown="btnMouseDown" MouseUp="btnMouseLeave" Source="Res/Help.png" HorizontalAlignment="Left" Height="20" Margin="425,5,0,0" VerticalAlignment="Top" Width="20" Visibility="Visible" MouseLeftButtonUp="ToInfoFrame"/>
+        <Image x:Name="iBack" MouseEnter="btnMouseEnter" MouseLeave="btnMouseLeave" MouseDown="btnMouseDown" MouseUp="btnMouseLeave" Source="Res/Back.png" HorizontalAlignment="Left" Height="20" Margin="425,5,0,0" VerticalAlignment="Top" Width="20" Visibility="Hidden" MouseLeftButtonUp="ToBackFrame"/>
+        <Frame x:Name="FMain" NavigationUIVisibility="Hidden" Margin="0,30,0,0" />
+    </Grid>
+</Window>
