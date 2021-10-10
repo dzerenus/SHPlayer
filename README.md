@@ -3,6 +3,8 @@
 
 Программа написана на языке C# с использованием WPF на .NET Core 5.1. Никаких паттернов проектирования использовано в программе не было, так как проект очень простой и не требует этого.
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/48196899/136685770-52cd173f-d7ee-4ddc-8320-13e686ac0619.PNG"></img>
-</p>
+<p align="center"><img src="https://user-images.githubusercontent.com/48196899/136685770-52cd173f-d7ee-4ddc-8320-13e686ac0619.PNG"></img></p>
+
+### Структура проекта
+- SHPlayer — Скомпилированная готовая к работе программа;
+- Project — Исходные файлы проекта.
